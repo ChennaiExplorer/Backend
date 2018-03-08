@@ -1,0 +1,22 @@
+Tables:
+
+1.Table Name: ROUTETABLE
+Columns:RouteID(VARCHAR),RouteName(VARCHAR)(PK),RouteLine(varchar)
+
+RouteID RouteName                   RouteLine
+1       CHENNAI BEACH - TAMBARAM    SouthLine
+2       TAMBARAM - CHENNAI BEACH    SouthLine
+3       CHENGALPATTU - TAMBARAM     SouthLine
+4       TAMBARAM - CHENGALPATTU     SouthLine
+5       CHENGALPATTU - TIRUMALPUR   SouthLine
+6       TIRUMALPUR - CHENGALPATTU   SouthLine
+
+(note: remaining routes need to added after implementing above routes with APP and SERVER)
+
+2.Table Name: STATIONTABLE
+Columns:S.NO(Int),RouteID(Varchar)(FK),StationID(Varchar)(PK),depStn(varchar),arrStn(varchar),
+        deptTimeWeekDay(Time),deptTimeWeekEnd(Time),arrTimeWeekDay(varchar),arrTimeWeekEnd(varchar),
+        FastOrSlow(Boolean),SundayAvail(Boolean),depPF(varchar),arrPF(varchar),kms(varchar)
+        
+      
+

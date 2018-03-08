@@ -1,0 +1,17 @@
+{
+  "name": "chennaiexplorer",
+  "version": "1.0.0",
+  "description": "Exlporing end to end Chennai City",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "express": "*",
+    "mongoose": "*",
+    "mysql": "^2.15.0"
+  },
+  "author": "Chennai Explorer Team",
+  "license": "ISC"
+}
