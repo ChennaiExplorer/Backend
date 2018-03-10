@@ -19,12 +19,19 @@ RT = require('./models/RouteSelection.js');
 // var db = mongoose.connection;
 
 var con = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "root",
-  port: 3306,
-  database: "chennaiexplorer"
+  host     : process.env.RDS_HOSTNAME,
+  user     : process.env.RDS_USERNAME,
+  password : process.env.RDS_PASSWORD,
+  port     : process.env.RDS_PORT
 });
+
+// var con = mysql.createConnection({
+//   host: "localhost",
+//   user: "root",
+//   password: "root",
+//   port: 3306,
+//   database: "chennaiexplorer"
+// });
 
 con.connect(function(err) {
   if (err) throw err;
