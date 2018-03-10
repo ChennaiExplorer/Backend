@@ -34,7 +34,10 @@ var con = mysql.createConnection({
 // });
 
 con.connect(function(err) {
-  if (err) throw err;
+  if (err) {
+    console.error('Database connection failed: ' + err.stack);
+    return;
+  }
   console.log("Connected");
 
 });
